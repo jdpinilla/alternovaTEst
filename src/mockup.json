@@ -1,0 +1,28 @@
+{
+  "products": [
+      {
+          "name": "Redbull",
+          "image": "https://media.istockphoto.com/id/537022544/es/foto/aluminio-de-rojo-toro-bebida-energética-fondo-helada.jpg?s=612x612&w=0&k=20&c=ysqpWwd4y1REcCcQfI7ULBj9U7ILDjkiYlR_8d7dZec=",
+          "unit_price": 5000,
+          "stock": 5
+      },
+      {
+          "name": "Rice",
+          "image": "https://www.allrecipes.com/thmb/qCmK8NFQ2PZjV07iDWIQZCJYlnc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/99211-Perfect-sushi-rice-mfs-076-1x1-1-0e2970b8246c4422b52157b6dab5cd6e.jpg",
+          "unit_price": 2000,
+          "stock": 0
+      },
+      {
+          "name": "Papitas de limón margarita",
+          "image": "https://copservir.vtexassets.com/arquivos/ids/771951/PAPA-MARGARITA-LIMON_F.png?v=637951129187230000",
+          "unit_price": 1500,
+          "stock": 1
+      },
+      {
+          "name": "meat / pound",
+          "image": "https://static.diariovasco.com/www/multimedia/201906/03/media/cortadas/carne-roja-kS1C-R5uqUSGFlSqj84mn1I9bQuN-624x385@Diario%20Vasco.jpg",
+          "unit_price": 500,
+          "stock": 8
+      }
+  ]
+}
