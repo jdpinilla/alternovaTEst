@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { SingleProductCart } from './SingleProductCart';
 import { useCartContext } from '@/context/CartContext';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import CloseIcon from '@mui/icons-material/Close';
 
 export const Cart = ({ open, isOpen }) => {
   const { cart } = useCartContext();
+  const isMobile = useMediaQuery();
   let cartJson = JSON.stringify(cart);
   const file = new Blob([[cartJson], { type: 'text/plain' }])
   const createJson = () => {
@@ -13,7 +15,7 @@ export const Cart = ({ open, isOpen }) => {
   }
   return (
     <MainCart open={open}>
-      <CartMenu>
+      <CartMenu isMobile={isMobile}>
         <StructureCart>
           <TopContainer>
             <Title>
@@ -66,7 +68,7 @@ const TopContainer = styled.div`
 
 const CartMenu = styled.div`
   position: absolute;
-  width: 50%;
+  width: ${(props) => props.isMobile ? '50%' : '100%'};
   height: 100%;
   background-color: white;
   right: 0px;
